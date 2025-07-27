@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of `go build`
+/phantompay
+
+# Vendor folder (if using `go mod vendor`)
+/vendor/
+
+# Environment files
+.env
+.env.*
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
