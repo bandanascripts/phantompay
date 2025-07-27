@@ -14,7 +14,6 @@ func RegisteredRoutes(c *gin.Engine) {
 	c.POST("/phantompay/withdraw", middleware.TokenMiddleware(), controllers.WithdrawMoneyHandler)
 	c.POST("/phantompay/transaction", middleware.TokenMiddleware(), controllers.TransactionHandler)
 
-	c.GET("/phantompay/inspect", middleware.TokenMiddleware(), controllers.InspectHandler)
 	c.GET("phantompay/wallet", middleware.TokenMiddleware(), controllers.CreateWalletHandler)
 	c.GET("/phantompay/transactionhistory", middleware.TokenMiddleware(), controllers.TransactionHistoryHandler)
 }

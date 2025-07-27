@@ -56,19 +56,6 @@ func RegisterHandler(c *gin.Context) {
 	c.JSON(http.StatusCreated, gin.H{"message": message})
 }
 
-func InspectHandler(c *gin.Context) {
-
-	userId, err := middleware.ExtractUserId(c)
-
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{"userid": userId})
-
-}
-
 func DepositHandler(c *gin.Context) {
 
 	var deposit database.DepositRequest
