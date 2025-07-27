@@ -57,7 +57,7 @@ go build
 | POST   | `phantompay/transaction`    | Transfer money to another user  | ✅            |
 | GET    | `phantompay/transactionhistory`| Get transaction history         | ✅            |
 
-> All authenticated routes require a valid JWT in the `Authorization` header.
+All authenticated routes require a valid JWT in the `Authorization` header.
 
 ## License
 
